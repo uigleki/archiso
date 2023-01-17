@@ -1,0 +1,36 @@
+# 应用快捷键
+#
+# win + enter => 打开终端
+# win + x => 打开电子书
+# win + z => 打开浏览器
+#
+# 常用快捷键
+#
+# ctrl + tab => 切换窗口
+# win + 方向键 => 移动窗口
+# ctrl + q => 关闭窗口
+#
+# 例外快捷键
+#
+# ctrl + d => 退出终端
+
+[com.github.johnfactotum.Foliate.desktop]
+_k_friendly_name=Foliate
+_launch=Meta+X,none,Foliate
+new-window=none,none,书库
+
+[firefox.desktop]
+_k_friendly_name=Firefox
+_launch=Meta+Z,none,Firefox
+new-private-window=none,none,新建隐私浏览窗口
+new-window=none,none,新建窗口
+
+[kwin]
+Walk Through Windows=Ctrl+Tab,Alt+Tab,遍历窗口
+Walk Through Windows (Reverse)=Ctrl+Shift+Tab,Alt+Shift+Backtab,遍历窗口(反向)
+
+[org.kde.konsole.desktop]
+NewTab=none,none,打开新标签
+NewWindow=none,none,打开新窗口
+_k_friendly_name=Konsole 命令行终端
+_launch=Ctrl+Alt+T\tMeta+Return,Ctrl+Alt+T,Konsole 命令行终端

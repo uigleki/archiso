@@ -1,0 +1,11 @@
+# 切换输入法用 Shift + Ctrl，默认 Ctrl + Space
+[Hotkey/TriggerKeys]
+0=Control+Shift+Control_L
+1=Zenkaku_Hankaku
+2=Hangul
+
+[Behavior]
+# 共享输入状态
+ShareInputState=All
+# 在焦点更改时显示输入法信息
+showInputMethodInformationWhenFocusIn=True

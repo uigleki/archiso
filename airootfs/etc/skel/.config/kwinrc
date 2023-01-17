@@ -1,0 +1,13 @@
+# 夜间护眼颜色
+[NightColor]
+Active=true
+LatitudeAuto=30
+LongitudeAuto=120
+
+# 任务切换使用缩略图
+[TabBox]
+LayoutName=thumbnails
+
+# 窗口最大化时隐藏标题栏
+[Windows]
+BorderlessMaximizedWindows=true

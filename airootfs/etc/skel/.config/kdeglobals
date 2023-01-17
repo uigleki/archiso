@@ -1,0 +1,13 @@
+[General]
+# 默认应用
+BrowserApplication=firefox.desktop
+
+# 字体
+fixed=Monospace,11,-1,5,50,0,0,0,0,0
+font=Sans Serif,11,-1,5,50,0,0,0,0,0
+menuFont=Sans Serif,11,-1,5,50,0,0,0,0,0
+smallestReadableFont=Sans Serif,9,-1,5,50,0,0,0,0,0
+toolBarFont=Sans Serif,11,-1,5,50,0,0,0,0,0
+
+[WM]
+activeFont=Sans Serif,11,-1,5,50,0,0,0,0,0

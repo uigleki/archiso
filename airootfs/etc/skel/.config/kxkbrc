@@ -1,0 +1,4 @@
+# 交换左 Alt 和左 Ctrl
+[Layout]
+Options=ctrl:swap_lalt_lctl
+ResetOldOptions=true
