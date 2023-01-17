@@ -137,8 +137,6 @@ exa
 fd
 ripgrep
 bottom
-apparmor
-dnscrypt-proxy
 firewalld
 gocryptfs
 podman-docker
