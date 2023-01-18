@@ -11,3 +11,5 @@ passwd -u arch
 
 fish ~/env.fish
 sudo -u arch fish ~/env.fish
+
+sudo -u arch tldr --update
