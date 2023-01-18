@@ -165,6 +165,8 @@ ark
 python-notify2
 python-psutil
 firefox
+firefox-i18n-zh-cn
+firefox-ublock-origin
 gwenview
 elisa
 vlc
