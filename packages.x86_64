@@ -154,6 +154,7 @@ vulkan-radeon
 lib32-vulkan-radeon
 bluez
 plasma-meta
+xorg-xmodmap
 xclip
 konsole
 yakuake
