@@ -1,3 +1,5 @@
+user_name=arch
+
 sed -i '/#\(en_US\|zh_CN\).UTF-8/s/#//' /etc/locale.gen
 locale-gen
 
@@ -11,8 +13,16 @@ sed -i '/# %wheel .* NOPASSWD/s/# //' /etc/sudoers
 find /etc/skel -name '.bash*' | xargs rm -rf
 cp -aT /etc/skel/ /root/
 
-useradd -m -G wheel -s /bin/zsh arch
-passwd -d arch
-passwd -u arch
+useradd -m -G wheel -s /bin/zsh $user_name
+passwd -d $user_name
+passwd -u $user_name
 
-sudo -u arch tldr --update
+sudo -u $user_name tldr --update
+
+# 让用户可以运行容器
+touch /etc/subuid /etc/subgid
+chmod 644 /etc/subuid /etc/subgid
+usermod --add-subuids 100000-165535 --add-subgids 100000-165535 $user_name
+
+# docker 镜像拉取
+echo 'unqualified-search-registries = ["docker.io"]' >> /etc/containers/registries.conf
