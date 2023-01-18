@@ -1,6 +1,9 @@
 starship init fish | source     # 终端提示符
 zoxide init fish | source       # 目录跳转
 
+# 移除欢迎语
+set -U fish_greeting ""
+
 # git 控制
 abbr -a g   'lazygit'
 abbr -a ga  'git add'
