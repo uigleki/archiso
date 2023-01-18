@@ -15,7 +15,4 @@ useradd -m -G wheel -s /bin/zsh arch
 passwd -d arch
 passwd -u arch
 
-fish /root/env.fish
-sudo -u arch fish /root/env.fish
-
 sudo -u arch tldr --update
