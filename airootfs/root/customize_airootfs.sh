@@ -31,3 +31,9 @@ usermod --add-subuids 100000-165535 --add-subgids 100000-165535 $user_name
 
 # docker 镜像拉取
 echo 'unqualified-search-registries = ["docker.io"]' >> /etc/containers/registries.conf
+
+if [ -e /root/wallpapers ]; then
+    rm -rf /usr/share/wallpapers
+    rsync -rt /root/wallpapers /usr/share
+    rm -rf /root/wallpapers
+fi
