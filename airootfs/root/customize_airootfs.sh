@@ -7,6 +7,7 @@ ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 systemctl set-default graphical.target
 systemctl enable firewalld bluetooth NetworkManager sddm
+systemctl disable reflector
 
 sed -i '/# %wheel .* NOPASSWD/s/# //' /etc/sudoers
 
