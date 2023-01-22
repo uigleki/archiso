@@ -19,6 +19,11 @@ passwd -u $user_name
 
 sudo -u $user_name tldr --update
 
+# 火狐安装 plasma 集成
+firefox_ext_dir=/usr/lib/firefox/browser/extensions
+mkdir -p $firefox_ext_dir
+curl https://addons.mozilla.org/firefox/downloads/file/3859385/plasma_integration-fx.xpi -o $firefox_ext_dir/plasma-browser-integration@kde.org.xpi
+
 # 让用户可以运行容器
 touch /etc/subuid /etc/subgid
 chmod 644 /etc/subuid /etc/subgid
