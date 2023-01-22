@@ -34,6 +34,5 @@ echo 'unqualified-search-registries = ["docker.io"]' >> /etc/containers/registri
 
 if [ -e /root/wallpapers ]; then
     rm -rf /usr/share/wallpapers
-    rsync -rt /root/wallpapers /usr/share
-    rm -rf /root/wallpapers
+    mv /root/wallpapers /usr/share/wallpapers
 fi
