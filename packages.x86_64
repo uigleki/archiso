@@ -139,6 +139,7 @@ fd
 ripgrep
 tealdeer
 bottom
+zram-generator
 firewalld
 gocryptfs
 podman-docker
