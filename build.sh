@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -eo pipefail
 
-cd $(dirname $0)
-sudo mkarchiso -v "$@" .
-sudo rm -rf work
+conf_dir=$(dirname $0)
+sudo mkarchiso -v "$@" $conf_dir
+sudo rm -rf $conf_dir/work
