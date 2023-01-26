@@ -14,3 +14,11 @@ fi
 # 编辑器
 export COLORTERM=truecolor
 export EDITOR=helix
+
+# 模糊搜索
+export FZF_DEFAULT_COMMAND='fd --type=file'
+export FZF_DEFAULT_OPTS='--preview="bat -n --color=always {}"'
+export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
+export FZF_CTRL_R_OPTS='--preview="echo {}" --preview-window=hidden'
+export FZF_ALT_C_COMMAND='fd --type=directory'
+export FZF_ALT_C_OPTS='--preview="exa -TF {}"'
