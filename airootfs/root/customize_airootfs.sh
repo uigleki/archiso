@@ -35,7 +35,7 @@ echo 'unqualified-search-registries = ["docker.io"]' >> /etc/containers/registri
 
 if [ -e /root/wallpapers ]; then
     rm -rf /usr/share/wallpapers
-    rsync -a --remove-source-files /root/wallpapers /usr/share
+    mv /root/wallpapers /usr/share
 fi
 
 reflector @/etc/xdg/reflector/reflector.conf
