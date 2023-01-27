@@ -6,6 +6,7 @@ locale-gen
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 systemctl set-default graphical.target
+systemctl disable systemd-resolved systemd-timesyncd
 systemctl enable chronyd dnscrypt-proxy firewalld bluetooth NetworkManager sddm systemd-oomd
 
 sed -i '/# %wheel .* NOPASSWD/s/# //' /etc/sudoers
