@@ -28,6 +28,7 @@ curl
 dnscrypt-proxy
 dolphin
 dosfstools
+dust
 efibootmgr
 elisa
 exa
@@ -46,6 +47,7 @@ fuse-overlayfs
 fzf
 geoip
 git
+git-delta
 gocryptfs
 grub
 grub-btrfs
