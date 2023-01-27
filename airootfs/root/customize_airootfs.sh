@@ -4,9 +4,9 @@ sed -i '/#\(en_US\|zh_CN\).UTF-8/s/#//' /etc/locale.gen
 locale-gen
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
-systemctl mask systemd-resolved
+systemctl mask    systemd-resolved
 systemctl disable systemd-timesyncd
-systemctl enable chronyd dnscrypt-proxy firewalld bluetooth NetworkManager sddm systemd-oomd
+systemctl enable  chronyd dnscrypt-proxy firewalld bluetooth NetworkManager sddm systemd-oomd
 
 sed -i '/# %wheel .* NOPASSWD/s/# //' /etc/sudoers
 
@@ -18,6 +18,7 @@ passwd -d $user_name
 passwd -u $user_name
 
 sudo -u $user_name tldr --update
+sudo -u $user_name fish -c 'fish_update_completions'
 
 # 火狐安装 plasma 集成
 firefox_ext_dir=/usr/lib/firefox/browser/extensions
