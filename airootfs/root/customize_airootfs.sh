@@ -6,8 +6,7 @@ locale-gen
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 systemctl set-default graphical.target
-systemctl enable firewalld bluetooth NetworkManager sddm
-systemctl disable reflector
+systemctl enable chronyd dnscrypt-proxy firewalld bluetooth NetworkManager sddm systemd-oomd
 
 sed -i '/# %wheel .* NOPASSWD/s/# //' /etc/sudoers
 
@@ -35,5 +34,7 @@ echo 'unqualified-search-registries = ["docker.io"]' >> /etc/containers/registri
 
 if [ -e /root/wallpapers ]; then
     rm -rf /usr/share/wallpapers
-    mv /root/wallpapers /usr/share/wallpapers
+    rsync -a --remove-source-files /root/wallpapers /usr/share
 fi
+
+chattr +i /etc/resolv.conf
