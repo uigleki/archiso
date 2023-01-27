@@ -38,4 +38,5 @@ if [ -e /root/wallpapers ]; then
     rsync -a --remove-source-files /root/wallpapers /usr/share
 fi
 
+sed -i '/^#S/s/#//' /etc/pacman.d/mirrorlist
 chattr +i /etc/resolv.conf
