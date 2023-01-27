@@ -82,6 +82,7 @@ podman-docker
 python-lsp-server
 qrencode
 ranger
+reflector
 ripgrep
 rsync
 sddm
