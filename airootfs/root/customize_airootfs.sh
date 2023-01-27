@@ -5,7 +5,6 @@ locale-gen
 
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
-systemctl set-default graphical.target
 systemctl mask systemd-resolved
 systemctl disable systemd-timesyncd
 systemctl enable chronyd dnscrypt-proxy firewalld bluetooth NetworkManager sddm systemd-oomd
