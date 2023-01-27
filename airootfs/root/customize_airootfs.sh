@@ -38,5 +38,5 @@ if [ -e /root/wallpapers ]; then
     rsync -a --remove-source-files /root/wallpapers /usr/share
 fi
 
-systemctl start reflector
+reflector @/etc/xdg/reflector/reflector.conf
 chattr +i /etc/resolv.conf
