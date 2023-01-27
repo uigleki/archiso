@@ -6,13 +6,14 @@ locale-gen
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 systemctl set-default graphical.target
-systemctl disable systemd-resolved systemd-timesyncd
+systemctl mask systemd-resolved
+systemctl disable systemd-timesyncd
 systemctl enable chronyd dnscrypt-proxy firewalld bluetooth NetworkManager sddm systemd-oomd
 
 sed -i '/# %wheel .* NOPASSWD/s/# //' /etc/sudoers
 
 find /etc/skel -name '.bash*' | xargs rm -rf
-cp -aT /etc/skel/ /root/
+rsync -a /etc/skel/ /root
 
 useradd -m -G wheel -s /bin/zsh $user_name
 passwd -d $user_name
