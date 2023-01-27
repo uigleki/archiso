@@ -2,7 +2,6 @@ user_name=arch
 
 sed -i '/#\(en_US\|zh_CN\).UTF-8/s/#//' /etc/locale.gen
 locale-gen
-
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 systemctl mask systemd-resolved
@@ -39,4 +38,5 @@ if [ -e /root/wallpapers ]; then
 fi
 
 reflector @/etc/xdg/reflector/reflector.conf
-chattr +i /etc/resolv.conf
+pacman-key --init
+pacman-key --populate
