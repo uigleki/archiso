@@ -38,6 +38,6 @@ if [ -e /root/wallpapers ]; then
     mv /root/wallpapers /usr/share
 fi
 
-reflector @/etc/xdg/reflector/reflector.conf
+sed -i 's/^#S/S/' /etc/pacman.d/mirrorlist
 pacman-key --init
 pacman-key --populate
