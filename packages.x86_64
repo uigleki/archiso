@@ -29,6 +29,7 @@ dnscrypt-proxy
 dolphin
 dosfstools
 dust
+edk2-shell
 efibootmgr
 elisa
 exa
@@ -63,6 +64,8 @@ lib32-vulkan-radeon
 linux
 linux-firmware
 man-pages-zh_cn
+memtest86+
+memtest86+-efi
 mkinitcpio
 neovim
 networkmanager
