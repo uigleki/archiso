@@ -57,7 +57,6 @@ helix
 intel-ucode
 iptables-nft
 konsole
-ktorrent
 lazygit
 lib32-vulkan-intel
 lib32-vulkan-radeon
@@ -87,6 +86,7 @@ pipewire-pulse
 plasma-meta
 podman-docker
 python-lsp-server
+qbittorrent
 qrencode
 ranger
 reflector
