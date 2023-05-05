@@ -9,5 +9,8 @@ idle-timeout = 0
 [editor.cursor-shape]
 insert = "bar"
 
+[editor.soft-wrap]
+enable = true
+
 [keys.insert]
 home = "normal_mode"
